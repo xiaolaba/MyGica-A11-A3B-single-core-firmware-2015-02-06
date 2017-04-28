@@ -1,0 +1,114 @@
+@charset "utf-8";
+.clearfix:after {
+	content:".";
+	display:block;
+	height:0;
+	clear:both;
+	visibility:hidden
+}
+.clearfix {
+	display:inline-table
+}
+*html .clearfix {
+	height:1%
+}
+.clearfix {
+	display:block
+}
+*+html .clearfix {
+	min-height:1%
+}
+/* nav_menu */
+.nav_menu {
+	height: 51px;
+	background-color: #ff6e3d;
+}
+.nav {
+	width:1240px;
+	height:51px;
+	position:relative;
+	margin:0 auto;
+}
+.nav .list li {
+	float:left;	
+}
+.nav .list a {
+	float:left;
+	display:block;
+	padding:0px 20px;
+	height:51px;
+	text-align:center;
+	line-height:51px;
+	font-size:20px;
+	color:#fff;
+	position:relative;
+	font-family: "微软雅黑";
+}
+.nav .list a:hover {
+	color:#fff;
+}
+.nav .list a:hover, .nav .list .now , .nav .list .no{
+	color:#fff;
+	height:51px;
+	background-color:#f05f32;z-index:99999
+	
+}
+.nav .list {}
+.nav .list .tidh_1 a:hover span{ display:block; height:4px;background:url('../images/nav_bm.gif') no-repeat center bottom; }
+.nav .box {
+	position:absolute;
+	left:0px;
+	top:51px;
+    background:#f2f2f2;
+	overflow:hidden;
+	height:0;
+	filter:alpha(opacity=0);
+	opacity:0;
+	border-bottom:2px solid #ccc;
+	z-index:99;
+}
+.nav .cont {
+	position:relative;
+	padding:25px 0 0px 20px;
+}
+/* sublist */
+.sublist li {
+	float:left;
+	width:200px;
+	height:130px;
+	 border:0px solid #000000;
+	 padding-left:5px;
+	text-align:center;
+	padding-right:24px;
+	padding-bottom:24px;
+	background: url('../images/nav_li.jpg') no-repeat left center;
+}
+.sublist li .nav_pic{ display:block; margin-top:10px;}
+.sublist li .nav_pic img{ width:140px; height:100px;}
+.sublist li h3.mcate-item-hd {
+	font-family:'微软雅黑';
+	padding-left:2px;
+	font-size:14px;
+	height:26px;
+	line-height:26px;
+	border-bottom:1px dashed #666666;
+}
+.sublist li p.mcate-item-bd {
+	padding-left:2px;
+}
+.sublist li p.mcate-item-bd a {
+	height:26px;
+	line-height:26px;
+	margin-right:5px;
+	font-size:12px;
+	color:#666666;
+	text-decoration:none;
+	display:inline-block;
+}
+.sublist li p.mcate-item-bd a:hover {
+	color:#6c5143;
+	text-decoration:underline;
+}
+
+.nav_ulbm{background: url('../images/nav_ul.jpg') no-repeat 50px top;}
+.sublist li.nav_lir{ background:none;}
